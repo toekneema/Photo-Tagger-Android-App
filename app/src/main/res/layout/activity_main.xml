@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="320dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="350dp"
+        android:background="@drawable/image_border"
+        android:padding="2dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView1"
+        />
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text = "Tag(s)"
+            android:textSize="9pt"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_weight=".75"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Size"
+            android:textSize="9pt"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_weight=".75"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="169dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginRight="4dp"
+            android:onClick="saveSomething"
+            android:text="Save"/>
+        <Button
+            android:id="@+id/load"
+            android:layout_width="169dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/roundshapebtn"
+            android:onClick="loadSomething"
+            android:text="Load"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="342dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundshapebtn"
+        android:onClick="captureSomething"
+        android:text="Capture"/>
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="109dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/roundshapebtn2"
+            android:onClick="previous"
+            android:text="Previous"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="109dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/roundshapebtn2"
+            android:onClick="next"
+            android:text="Next"/>
+
+    </LinearLayout>
+
+</LinearLayout>
